@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ME from "../../assets/me-about.jpg";
+import ME from "../../assets/dtgk-about.jpg";
 import { FaAward } from "react-icons/fa";
 import { TbSchool } from "react-icons/tb";
 import { GiOpenFolder } from "react-icons/gi";
