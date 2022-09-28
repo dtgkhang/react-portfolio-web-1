@@ -56,7 +56,7 @@
  
 }
 /* Media Queries - small device */
-
+ 
 @media screen and (max-width: 600px) {
     .exp__container {
         gap: 1rem;}
