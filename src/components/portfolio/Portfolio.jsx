@@ -20,7 +20,7 @@ const portfolio = () => {
           <h3>Portfolio title - Coming Soon</h3>
           <div className="portfo__item-cta">
             <a href="#" className="btn" target="_blank">
-              Gtihub
+              Github
             </a>
             <a href="#" className="btn btn-primary" target="_blank">
               Live Demo
@@ -34,7 +34,7 @@ const portfolio = () => {
           <h3>Portfolio title - Coming Soon</h3>
           <div className="portfo__item-cta">
             <a href="#" className="btn" target="_blank">
-              Gtihub
+              Github
             </a>
             <a href="#" className="btn btn-primary" target="_blank">
               Live Demo
@@ -48,7 +48,7 @@ const portfolio = () => {
           <h3>Portfolio title - Coming Soon</h3>
           <div className="portfo__item-cta">
             <a href="#" className="btn" target="_blank">
-              Gtihub
+              Github
             </a>
             <a href="#" className="btn btn-primary" target="_blank">
               Live Demo
@@ -62,7 +62,7 @@ const portfolio = () => {
           <h3>Portfolio title - Coming Soon</h3>
           <div className="portfo__item-cta">
             <a href="#" className="btn" target="_blank">
-              Gtihub
+              Github
             </a>
             <a href="#" className="btn btn-primary" target="_blank">
               Live Demo
@@ -76,7 +76,7 @@ const portfolio = () => {
           <h3>Portfolio title - Coming Soon</h3>
           <div className="portfo__item-cta">
             <a href="#" className="btn" target="_blank">
-              Gtihub
+              Github
             </a>
             <a href="#" className="btn btn-primary" target="_blank">
               Live Demo
@@ -90,7 +90,7 @@ const portfolio = () => {
           <h3>Portfolio title - Coming Soon</h3>
           <div className="portfo__item-cta">
             <a href="#" className="btn" target="_blank">
-              Gtihub
+              Github
             </a>
             <a href="#" className="btn btn-primary" target="_blank">
               Live Demo

@@ -34,10 +34,8 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
-            inventore dolores delectus maiores enim, assumenda eum numquam
-            officiis tempora sit quasi, alias suscipit. Ipsum itaque tempore,
-            veritatis facere nam est!
+          Hi, I'm Khang, and I'm in my third year of studies towards a bachelor's in Software Engineering at FPT University.
+          Courteous and enthusiastic, I am interested in Web programming and Blockchain.
           </p>
          <a href="#contact" className="btn btn-primary ">Let's Talk</a> 
         </div>
