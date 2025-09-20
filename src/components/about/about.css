@@ -1,105 +1,136 @@
-.about__container{
-    display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
+.about__container {
+  display: grid;
+  grid-template-columns: minmax(280px, 32%) 1fr;
+  gap: 3.2rem;
+  align-items: center;
 }
 
-.about__me{
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 2rem;
-    background: linear-gradient(
-        45deg,
-        transparent,
-        var(--color-primary),
-        transparent
-    );
-    display: grid;
-    place-items: center;
-}
-.about__me-image{
-    border-radius: 2rem;
-    overflow: hidden;
-    transform: rotate(8deg);
-    transition: var(--transition);
-}
-.about__me-image:hover{
-    transform: rotate(0deg);
-
-}
-.about__cards{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1.5rem;
+.about__media {
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-.about__card{
-    background: var(--color-primary-variant);
-    border: 1px solid transparent;
-    border-radius: 1rem;
-    padding: 2rem;
+.about__media-frame {
+  position: relative;
+  width: 360px;
+  max-width: 100%;
+  border-radius: 2rem;
+  padding: 1.1rem;
+  background: linear-gradient(140deg, rgba(56, 189, 248, 0.22), rgba(15, 23, 42, 0.4));
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  box-shadow: var(--shadow-soft);
+  transition: transform 300ms ease;
+}
+
+.about__media-frame img {
+  border-radius: 1.4rem;
+}
+
+.about__content {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(160px, 1fr));
+  gap: 1.6rem;
+}
+
+.about__card {
+  background: rgba(15, 23, 42, 0.72);
+  border-radius: 1.4rem;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  padding: 1.6rem;
+  display: grid;
+  gap: 0.7rem;
+  transition: transform 300ms ease, border-color 300ms ease;
+}
+
+.about__icon {
+  font-size: 1.4rem;
+  color: var(--color-primary);
+}
+
+.about__card h3 {
+  font-size: 1.03rem;
+}
+
+.about__card p {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.about__copy {
+  display: grid;
+  gap: 1rem;
+  color: var(--color-muted);
+  font-size: 1rem;
+}
+
+.about__cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.about__media-frame:hover {
+  transform: translateY(-6px) scale(1.01);
+}
+
+.about__card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(56, 189, 248, 0.28);
+}
+
+@media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
     text-align: center;
-    transition: var(--transition);
-}
-.about__card:hover{
-    background: transparent;
-    border-color:var(--color-primary-variant) ;
-    cursor: default;
+  }
+
+  .about__media {
+    order: -1;
+  }
+
+  .about__content {
+    align-items: center;
+  }
+
+  .about__cards {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .about__copy {
+    text-align: left;
+  }
 }
 
-.about__icon{
-    color: var(--color-primary);
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-}
+@media screen and (max-width: 640px) {
+  .about__container {
+    gap: 2rem;
+  }
 
-.about__card h5{
+  .about__media-frame {
+    width: 280px;
+  }
+
+  .about__cards {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .about__cta {
+    width: 100%;
+    flex-direction: column;
+    }
+
+  .about__cta .btn {
+    width: 100%;
+  }
+
+  .about__copy {
     font-size: 0.95rem;
-}
-
-.about__card small{
-    font-size: 0.7rem;
-    color: var(--color-light);
-}
-.about__content p{
-    margin: 2rem 0 2.6rem;
-    color: var(--color-light);
-}
-
-/* Media Queries - Medium device */
-
-@media screen and (max-width:1024px) {
-    .about__container{
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-    .about__me{
-        width: 50%;
-     
-        margin: 2rem auto 4rem;
-    }
-    .about__content p {
-        margin: 1rem 0 1.5rem;
-    }
-      
-}
-
-/* Media Queries - Small device */
-
-@media screen and (max-width:680px) {
-    .about__me{
-        width: 65%;
-     
-        margin: 0 auto 3rem;
-    }
-    .about__cards{
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
-    .about__content{
-        text-align: center;
-    }
-    .about__content p{
-        margin: 1.5rem 0;
     }
 }
